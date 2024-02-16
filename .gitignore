@@ -15,6 +15,7 @@
 */data/*.json
 */data/*.jsonl
 */data/*.html
+*/data/*.csv
 
 # __pycache__ files
 */*/__pycache__
