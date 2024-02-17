@@ -11,7 +11,7 @@
 .env
 
 # data files
-*/data/*.xlsx
+*/data/data.xlsx
 */data/*.json
 */data/*.jsonl
 */data/*.html
