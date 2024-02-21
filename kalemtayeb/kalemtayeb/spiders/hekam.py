@@ -1,6 +1,7 @@
 import scrapy
 
 
+
 class HekamSpider(scrapy.Spider):
     name = "hekam"
     allowed_domains = ["kalemtayeb.com"]
