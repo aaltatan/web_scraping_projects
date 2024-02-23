@@ -1,8 +1,11 @@
-import scrapy
 from scrapy.http import Response, Request, FormRequest
-import logging
+from selectolax.parser import HTMLParser
 from typing import Iterator
 import requests
+import logging
+import scrapy
+import json
+
 
 logging.basicConfig(
     filemode="a",
@@ -20,7 +23,19 @@ class CompaniesSpider(scrapy.Spider):
 
     def start_requests(self) -> Iterator[FormRequest]:
         BASE = "https://businssdirectory.com/wp-admin/admin-ajax.php"
-        for page in range(1, int(self.end) + 1):
+
+        pagination_url = 'https://businssdirectory.com/%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9/'
+
+        try:
+            response = requests.get(pagination_url, timeout=90)
+            parser = HTMLParser(response.text)
+            pagination = parser.css('#listing_ajax_pagination li')
+            end = max([int(li.attributes.get('data-page-no'))
+                      for li in pagination])
+        except:
+            end = 14_921
+
+        for page in range(1, end + 1):
             formdata = {"action": "dwt_ajax_search", "page_no": str(page)}
             request = FormRequest(url=BASE, formdata=formdata)
             request.meta["dont_cache"] = True
@@ -43,7 +58,8 @@ class CompaniesSpider(scrapy.Spider):
         contact_container = response.css("#tab1default")
         social_media = []
         if contact_container.css(".social-media a"):
-            social_media = contact_container.css(".social-media a::attr(href)").getall()
+            social_media = contact_container.css(
+                ".social-media a::attr(href)").getall()
 
         address = ""
 
@@ -53,30 +69,43 @@ class CompaniesSpider(scrapy.Spider):
             ).getall()
             address = ", ".join(address)
 
-        # phone = ""
-        # if response.css("#listing-contact-phone"):
-        #     phone_id = response.css(
-        #         "#listing-contact-phone::attr(data-listing-id)"
-        #     ).get()
-        #     try:
-        #         phone = requests.post(
-        #             "https://businssdirectory.com/wp-admin/admin-ajax.php",
-        #             data={"action": "retreive_phone_number", "listing_id": phone_id},
-        #         ).json()["resp"]
-        #     except:
-        #         pass
-
         website = ""
         if response.css('a[data-reaction="web"]'):
             website = response.css('a[data-reaction="web"]::attr(href)').get()
 
-        yield {
+        data = {
             "title": title,
             "category": category,
             "posted_at": posted_at,
             "description": description,
             "social_media": social_media,
             "address": address,
-            # "phone": phone,
             "website": website,
         }
+
+        phone_id = ""
+        if response.css("#listing-contact-phone"):
+            phone_id = response.css(
+                "#listing-contact-phone::attr(data-listing-id)"
+            ).get()
+            formdata = {
+                'action': 'retreive_phone_number',
+                'listing_id': phone_id
+            }
+            yield FormRequest(
+                url='https://businssdirectory.com/wp-admin/admin-ajax.php',
+                formdata=formdata,
+                callback=self.parse_phone,
+                cb_kwargs={'data': json.dumps(data)},
+            )
+        else:
+            yield data
+
+    def parse_phone(self, res: Response, data: str):
+        response: dict = json.loads(res.text)
+        data: dict = json.loads(data)
+
+        phone = response.get('resp')
+        data['phone'] = phone
+
+        yield data

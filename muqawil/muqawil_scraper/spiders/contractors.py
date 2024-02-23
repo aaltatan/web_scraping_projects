@@ -1,7 +1,9 @@
-from typing import Iterator
-import scrapy
 from scrapy.http import Request, Response
+from selectolax.parser import HTMLParser
+from typing import Iterator
+import requests
 import logging
+import scrapy
 
 
 logging.basicConfig(
@@ -28,10 +30,19 @@ class ContractorsSpider(scrapy.Spider):
     name = "contractors"
     allowed_domains = ["muqawil.org"]
 
-    # ? scrapy crawl contractors -a end=736
-
     def start_requests(self) -> Iterator[Request]:
-        end: int = int(self.end) + 1
+
+        pagination_url = 'https://muqawil.org/ar/contractors'
+        try:
+            response = requests.get(pagination_url)
+            parser = HTMLParser(response.text)
+            last_page_link = parser.css('.pagination li a')[-1]
+            last_page_link = last_page_link.attributes.get('href')
+            last_page = last_page_link.split('=')[-1]
+            end = int(last_page) + 1
+        except:
+            end = 747
+
         for page in range(1, end):
             request = Request(
                 url=f"https://muqawil.org/ar/contractors?page={page}",

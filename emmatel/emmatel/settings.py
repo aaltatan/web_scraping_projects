@@ -1,4 +1,4 @@
-# Scrapy settings for kalemtayeb project
+# Scrapy settings for emmatel project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "kalemtayeb"
+BOT_NAME = "emmatel"
 
-SPIDER_MODULES = ["kalemtayeb.spiders"]
-NEWSPIDER_MODULE = "kalemtayeb.spiders"
+SPIDER_MODULES = ["emmatel.spiders"]
+NEWSPIDER_MODULE = "emmatel.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "kalemtayeb (+http://www.yourdomain.com)"
+#USER_AGENT = "emmatel (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "kalemtayeb.middlewares.KalemtayebSpiderMiddleware": 543,
+#    "emmatel.middlewares.EmmatelSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "kalemtayeb.middlewares.KalemtayebDownloaderMiddleware": 543,
+#    "emmatel.middlewares.EmmatelDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "kalemtayeb.pipelines.KalemtayebPipeline": 300,
+#    "emmatel.pipelines.EmmatelPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -81,9 +81,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-HTTPCACHE_ENABLED = True
+#HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
-HTTPCACHE_DIR = "httpcache"
+#HTTPCACHE_DIR = "httpcache"
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 

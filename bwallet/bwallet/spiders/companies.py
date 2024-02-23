@@ -47,22 +47,15 @@ class CompaniesSpider(scrapy.Spider):
             .css('.cayan-description .description-p > div > p::text')
             .get()
         )
-        contact = [
-            (
-                element
-                .replace("\n", "")
-                .replace("\r", "")
-                .strip()
-            )
-            for element in
-            response.css('.cayan-contact h4 *::text').getall()
-            if (
-                element
-                .replace("\n", "")
-                .replace("\r", "")
-                .strip()
-            )
-        ]
+        clean = lambda x: (
+            x
+            .replace("\n", "")
+            .replace("\r", "")
+            .strip()
+        )
+        contact = [clean(element) 
+                   for element in response.css('.cayan-contact h4 *::text').getall()
+                   if clean(element)]
         social_media = (
             response
             .css('.cayan-media a::attr(href)')
