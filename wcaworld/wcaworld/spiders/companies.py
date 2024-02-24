@@ -27,8 +27,8 @@ class CompaniesSpider(scrapy.Spider):
                        "www.wcavendors.com",
                        "www.wcaprojects.com",
                        "www.wcaworldacademy.com",
-                    #    "www.iata.org",
-                    #    "ifc8.network",
+                       "www.iata.org",
+                       "ifc8.network",
                        "www.globalaffinityalliance.com"]
     ua = FakeUserAgent()
     custom_headers = {
@@ -66,15 +66,15 @@ class CompaniesSpider(scrapy.Spider):
             yield {
                 'url': url
             }
-            # headers = {
-            #     'User-Agent': self.ua.random
-            # }
-            # request = res.follow(url,
-            #                     headers=headers, 
-            #                     callback=self.parse_company)
-            #                     #  callback=self.parse_company)
-            # request.meta['dont_cache'] = True
-            # yield request
+            headers = {
+                'User-Agent': self.ua.random
+            }
+            request = res.follow(url,
+                                headers=headers, 
+                                callback=self.parse_company)
+                                #  callback=self.parse_company)
+            request.meta['dont_cache'] = True
+            yield request
 
     def parse_company(self, res: Response):
         response: scrapy.Selector = res
