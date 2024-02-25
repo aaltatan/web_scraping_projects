@@ -23,7 +23,7 @@ class CompaniesSpider(scrapy.Spider):
 
     def start_requests(self) -> Iterator[Request]:
         BASE = 'https://www.nab3.info/web.php'
-        for page in range(1, int(self.end) + 1):
+        for page in range(int(self.start), int(self.end) + 1):
             params = f"page={page}&country=all&categories=all&degree=all"
             yield Request(url=f'{BASE}?{params}',
                           headers={'User-Agent': self.ua.random})

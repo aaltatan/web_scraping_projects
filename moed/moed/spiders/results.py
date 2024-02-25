@@ -25,7 +25,7 @@ class ResultsSpider(scrapy.Spider):
 
     def start_requests(self) -> Iterator[FormRequest]:
 
-        # ? scrapy crawl results -a start=0 -a end=30000
+        # ? scrapy crawl results -a start=27406 -a end=30000
 
         BASE = "https://2023.moed.gov.sy/sec-ch2/12th/resultpage.php"
 
