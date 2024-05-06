@@ -102,6 +102,12 @@ class ProductsSpider(scrapy.Spider):
             }
             comments.append(comment)
 
+        google_map_link = (
+             response
+             .css('.listing__details__map__btn::attr(href)')
+             .get('')
+        )
+
         yield {
             "name": name,
             "categories": categories,
@@ -109,6 +115,7 @@ class ProductsSpider(scrapy.Spider):
             "contact": contact,
             "social_media": social_media,
             "working_week_times": working_week_times,
+            "google_map_link": google_map_link,
             "comments": comments,
             "comments_count": len(comments),
             "link": res.url,
