@@ -38,65 +38,71 @@ class CompaniesSpider(scrapy.Spider):
 
     def parse(self, res: Response):
         response: scrapy.Selector = res
-        links = response.css(".blooh-dd > a::attr(href)").getall()
-        for link in links:
-            yield res.follow(url=res.urljoin(link), callback=self.parse_category)
+        blocks = response.css(".menu-block")
+        for block in blocks:
+            link = block.css(".blooh-dd ~ h3 a::attr(href)").get("")
+            category = block.css(".blooh-dd ~ h3 a::text").get("")
+            yield res.follow(
+                url=res.urljoin(link),
+                callback=self.parse_category,
+                cb_kwargs={"category": category},
+                dont_filter=True,
+            )
 
-    def parse_category(self, res: Response):
+    def parse_category(self, res: Response, category: str):
         response: scrapy.Selector = res
         links = response.css(".ban-block")
         for link in links:
             url = link.css("a::attr(href)").get("")
-            category = link.css("a::text").get("")
+            subcategory = link.css("a::text").get("")
             request = res.follow(
                 url=res.urljoin(url),
                 callback=self.parse_companies,
-                cb_kwargs={"category": category},
+                cb_kwargs={"subcategory": subcategory, "category": category},
+                dont_filter=True,
             )
             request.meta["dont_cache"] = True
             yield request
 
-    def parse_companies(self, res: Response, category: str):
+    def parse_companies(self, res: Response, category: str, subcategory: str):
         response: scrapy.Selector = res
         links = response.css("#myTable > tbody > tr a::attr(href)").getall()
         for link in links:
             yield res.follow(
                 url=res.urljoin(link),
                 callback=self.parse_company,
-                cb_kwargs={"category": category},
+                cb_kwargs={"subcategory": subcategory, "category": category},
+                dont_filter=True,
             )
 
-    def parse_company(self, res: Response, category: str):
+    def parse_company(self, res: Response, category: str, subcategory: str):
         response: scrapy.Selector = res
 
         title: str = response.css(".title-company::text").get("")
-        category: str = (
-            category
-            .strip()
-            .split('(')[0]
-            .strip()
-        )
+        subcategory: str = subcategory.strip().split("(")[0].strip()
+        category: str = category.strip()
 
         data: dict[str, str] = {}
         keys: list[scrapy.Selector] = response.css(".signle-ul li")
         for key in keys:
-            k = key.css("span::text").get('').strip()
+            k = key.css("span::text").get("").strip()
             v = [i.strip() for i in key.css("*::text").getall() if i.strip()]
             v = "".join(v)
-            clean_row = {k: v.replace(k, '').strip()}
+            clean_row = {k: v.replace(k, "").strip()}
             data = {**data, **clean_row}
 
         tags = response.css(".cat-aat-a li a::text").getall()
         tags = [tag.strip() for tag in tags]
         tags = ", ".join(tags)
 
-        google_maps = response.css('#mapDiv a.google-maps-link::attr(href)').get('')
+        google_maps = response.css("#mapDiv a.google-maps-link::attr(href)").get("")
 
         yield {
             "title": title,
             "category": category,
+            "subcategory": subcategory,
             "tags": tags,
             "url": res.url,
             "google_maps": google_maps,
-            **data
+            **data,
         }
