@@ -1,9 +1,28 @@
-import scrapy
-from scrapy.http import Response, Request
-import chompjs
-import json
-from urllib.parse import urlencode
+from scrapy.http import Request, Response, FormRequest
+from urllib.parse import urlencode, parse_qs
+from fake_useragent import FakeUserAgent
+from typing import Iterator, Iterable
+import requests
 import logging
+import chompjs
+import scrapy
+import json
+import re
+
+
+logging.basicConfig(
+    filemode='a',
+    filename='logger.log',
+    format='[%(asctime)s] %(levelname)s | %(name)s => %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    encoding='utf-8',
+    level=logging.INFO
+)
+
+def cf_decode_email(encodedString):
+        r = int(encodedString[:2],16)
+        email = ''.join([chr(int(encodedString[i:i+2], 16) ^ r) for i in range(2, len(encodedString), 2)])
+        return email
 
 
 logging.basicConfig(
@@ -18,11 +37,12 @@ logging.basicConfig(
 class ItemsSpider(scrapy.Spider):
     name = "items"
     allowed_domains = ["www.yellowpages.ae"]
+    ua = FakeUserAgent()
 
     def start_requests(self) -> list[Request]:
         BASE = "https://www.yellowpages.ae/category"
         request = Request(BASE)
-        request.meta['dnt_cache'] = True
+        request.meta['dont_cache'] = True
         return [request]
 
     def parse_response_func(self, response: Response) -> dict:
@@ -56,7 +76,7 @@ class ItemsSpider(scrapy.Spider):
         links = self.generate_links_func(categories)
         for link in links:
             request = response.follow(link, self.parse_subcategory)
-            request.meta['dnt_cache'] = True
+            request.meta['dont_cache'] = True
             yield request
 
     def parse_subcategory(self, response: Response):
