@@ -48,7 +48,6 @@ class CompaniesSpider(Spider):
                     'category': category
                 }
             )
-            request.meta['dont_cache'] = True
             yield request
 
         next_page = response.css('a[rel="next"]::attr(href)').get()
