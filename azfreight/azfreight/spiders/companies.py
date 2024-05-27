@@ -66,7 +66,7 @@ class CompaniesSpider(scrapy.Spider):
         facilities = (
             response
             .css("#facSelect option::attr(value)")
-            .getall()[2:]
+            .getall()[8:]
         )
         countries_short = (
             response
