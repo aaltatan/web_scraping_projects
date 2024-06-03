@@ -110,9 +110,12 @@ class CompaniesSpider(scrapy.Spider):
 
     def parse_company(self, res: Response, country: str, facility: str):
         response: scrapy.Selector = res
+        meta_data: dict = json.loads(response.css('#allMeta::text').get(''))
+        meta_data = {k: v[0] for k, v in meta_data.items()}
         yield {
             "title": response.css("title::text").get(""),
             "url": res.url,
             "country": country,
             "facility": facility,
+            "meta": meta_data
         }
