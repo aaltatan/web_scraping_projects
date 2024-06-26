@@ -1,0 +1,553 @@
+[2024-06-26 10:18:58] INFO | scrapy.utils.log => Scrapy 2.11.1 started (bot: vhsp_de)
+[2024-06-26 10:18:59] INFO | scrapy.utils.log => Versions: lxml 5.1.0.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 23.10.0, Python 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)], pyOpenSSL 24.0.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.3, Platform Windows-10-10.0.19044-SP0
+[2024-06-26 10:18:59] INFO | scrapy.addons => Enabled addons:
+[]
+[2024-06-26 10:18:59] DEBUG | asyncio => Using selector: SelectSelector
+[2024-06-26 10:18:59] DEBUG | scrapy.utils.log => Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[2024-06-26 10:18:59] DEBUG | scrapy.utils.log => Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[2024-06-26 10:18:59] INFO | scrapy.extensions.telnet => Telnet Password: dc456621f6e3dab3
+[2024-06-26 10:18:59] INFO | scrapy.middleware => Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+[2024-06-26 10:18:59] INFO | scrapy.crawler => Overridden settings:
+{'BOT_NAME': 'vhsp_de',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_ENABLED': True,
+ 'NEWSPIDER_MODULE': 'vhsp_de.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['vhsp_de.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+[2024-06-26 10:18:59] INFO | scrapy.middleware => Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+[2024-06-26 10:18:59] INFO | scrapy.middleware => Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2024-06-26 10:18:59] INFO | scrapy.middleware => Enabled item pipelines:
+[]
+[2024-06-26 10:18:59] INFO | scrapy.core.engine => Spider opened
+[2024-06-26 10:18:59] INFO | scrapy.extensions.logstats => Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2024-06-26 10:18:59] DEBUG | scrapy.extensions.httpcache => Using filesystem cache storage in C:\Users\wpu0001\Desktop\web_scraping_projects\vhsp_de\.scrapy\httpcache
+[2024-06-26 10:18:59] INFO | scrapy.extensions.telnet => Telnet console listening on 127.0.0.1:6023
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/mitglieder/> (referer: None) ['cached']
+[2024-06-26 10:18:59] WARNING | py.warnings => C:\Users\wpu0001\Desktop\web_scraping_projects\scrapy-env\Lib\site-packages\scrapy\spidermiddlewares\referer.py:305: RuntimeWarning: Could not load referrer policy 'no-referrer, same-origin'
+  warnings.warn(msg, RuntimeWarning)
+
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=548> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=547> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=490> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=444> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=733> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=731> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=729> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=727> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=725> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=723> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=721> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=719> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=717> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=715> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=713> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=711> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=709> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=707> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=705> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=703> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=699> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=697> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=691> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=689> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=687> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=685> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=683> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=681> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=679> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=677> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=675> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=673> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=671> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=669> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] WARNING | py.warnings => C:\Users\wpu0001\Desktop\web_scraping_projects\scrapy-env\Lib\site-packages\scrapy\spidermiddlewares\referer.py:305: RuntimeWarning: Could not load referrer policy 'no-referrer, same-origin'
+  warnings.warn(msg, RuntimeWarning)
+
+[2024-06-26 10:18:59] WARNING | py.warnings => C:\Users\wpu0001\Desktop\web_scraping_projects\scrapy-env\Lib\site-packages\scrapy\spidermiddlewares\referer.py:305: RuntimeWarning: Could not load referrer policy 'no-referrer, same-origin'
+  warnings.warn(msg, RuntimeWarning)
+
+[2024-06-26 10:18:59] WARNING | py.warnings => C:\Users\wpu0001\Desktop\web_scraping_projects\scrapy-env\Lib\site-packages\scrapy\spidermiddlewares\referer.py:305: RuntimeWarning: Could not load referrer policy 'no-referrer, same-origin'
+  warnings.warn(msg, RuntimeWarning)
+
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=548>
+{'name': 'CROSS FREIGHT Internationale Speditionsges. mbH', 'address': 'Obenhauptstrasse 12', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=548'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=547>
+{'name': 'Heik Spedition GmbH', 'address': 'Altenwerder Hauptstrasse 6', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=547'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3479> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3334> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] WARNING | py.warnings => C:\Users\wpu0001\Desktop\web_scraping_projects\scrapy-env\Lib\site-packages\scrapy\spidermiddlewares\referer.py:305: RuntimeWarning: Could not load referrer policy 'no-referrer, same-origin'
+  warnings.warn(msg, RuntimeWarning)
+
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=490>
+{'name': 'Konrad Zippel Spediteur GmbH & Co. KG', 'address': 'Wendenstrasse 296', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=490'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=444>
+{'name': 'a. hartrodt Deutschland (GmbH & Co) KG', 'address': 'Recha-Luebke-Damm 31 ', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=444'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4680> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4674> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4544> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4449> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4379> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4273> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=733>
+{'name': 'Eurabel International Logistics GmbH', 'address': 'Gotenstrasse 10', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=733'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=731>
+{'name': 'ETG Europa Transport Gesellschaft mbH', 'address': 'Wendenstrasse 379', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=731'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=729>
+{'name': 'Embassy Freight Services Europe (Germany) GmbH', 'address': 'Axel-Springer-Platz 2', 'plz': '20355', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=729'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4211> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4198> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4119> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=727>
+{'name': 'Eimskip Transport GmbH', 'address': 'Willy-Brandt-Str. 57', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=727'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=721>
+{'name': 'DSV Road GmbH', 'address': 'Gruener Deich 1', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=721'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=725>
+{'name': 'ECU WORLDWIDE (GERMANY) GMBH', 'address': 'Hammerbroockstrasse 47b', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=725'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=723>
+{'name': 'ECLS Trans-Europe Container & Logistic Service GmbH', 'address': 'Grosse Baeckerstr. 9', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=723'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=717>
+{'name': 'DLS Land und See Speditionsgesellschaft mbH', 'address': 'Jacobsrade 1', 'plz': '22962', 'city': 'Siek', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=717'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=719>
+{'name': 'DPD Deutschland GmbH', 'address': 'Neue Wollkaemmereistr. 2', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=719'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=713>
+{'name': 'DHL Global Forwarding GmbH', 'address': 'Amsinckstrasse 28', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=713'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=715>
+{'name': 'DHL Solutions GmbH', 'address': 'Hammerbrookstr. 94', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=715'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=709>
+{'name': 'deugro (Deutschland) Projekt GmbH', 'address': 'Schopenstehl 15', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=709'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=707>
+{'name': 'Delta-Stallion Internationale Transport GmbH', 'address': 'HACC, Weg beim Jaeger 200, Geb. 393 A II', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=707'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=711>
+{'name': 'DHL Freight GmbH', 'address': 'Auf der Hohen Schaar 7', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=711'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=705>
+{'name': 'DACHSER SE', 'address': 'Wilhelm-Iwan-Ring 21', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=705'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4097> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4012> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3862> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3860> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3853> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3740> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3738> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3673> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3643> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3641> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3570> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3314> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=703>
+{'name': 'Cross Trans Service Hamburg GmbH', 'address': 'Herbert-Weichmann-Strasse 7', 'plz': '22085', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=703'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=691>
+{'name': 'CONTEX Shipping GmbH', 'address': 'Winterhuder Weg 31', 'plz': '22085', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=691'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=697>
+{'name': 'CON-TRUCK Shipping GmbH', 'address': 'Reiherstiegdeich 57', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=697'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=699>
+{'name': 'COSCO SHIPPING Logistics (Europe) GmbH', 'address': 'Herrengraben 74', 'plz': '20459', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=699'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=689>
+{'name': 'CargoSoft GmbH', 'address': 'Buschhoehe 10', 'plz': '28357', 'city': 'Bremen', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=689'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=687>
+{'name': 'Cargo Partner GmbH', 'address': 'Sachsenstr. 6/ Lindley Carree Bldg./Entry D', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=687'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=679>
+{'name': 'C. Steinweg (Süd-West Terminal) GmbH & Co. KG', 'address': 'Am Kamerunkai 5', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=679'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=681>
+{'name': 'C.H. Robinson Worldwide GmbH', 'address': 'Caffamacherreihe 5', 'plz': '20355', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=681'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=685>
+{'name': 'Cargo Link Transport + Logistik GmbH', 'address': 'Karpfangerstrasse 14', 'plz': '20459', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=685'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=683>
+{'name': 'CARETRANS GmbH', 'address': 'Brookdamm 15', 'plz': '21217', 'city': 'Seevetal', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=683'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=675>
+{'name': 'Brockmüller Spedition GmbH', 'address': 'Hammerbroockstrasse 93', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=675'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=677>
+{'name': 'KG BURSPED Speditions-GmbH & Co.', 'address': 'Halskestrasse 63', 'plz': '22113', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=677'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=671>
+{'name': 'BIS Beyoglu Internationale Spedition GmbH', 'address': 'Wendenstrasse 279', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=671'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=673>
+{'name': 'Breeze (Germany) GmbH', 'address': 'Schaarsteinwegsbruecke 2', 'plz': '20459', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=673'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3182> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3111> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3109> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3053> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2989> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2689> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2550> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2549> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2488> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2474> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2473> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2398> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2396> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2328> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=669>
+{'name': 'Bernhagen & Riege GmbH', 'address': 'Billstrasse 216', 'plz': '20539', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=669'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2278> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3479>
+{'name': 'HBC Hanseatisches Bahn Contor GmbH', 'address': 'Zellmannstrasse 10', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3479'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4544>
+{'name': 'logXpert', 'address': 'Ambrosch Software und Beratung GmbH / Eichelbergstr. 10', 'plz': '91722', 'city': 'Arberg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4544'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4680>
+{'name': 'Blue Water Shipping Germany GmbH', 'address': 'Ellerholzweg 18 - 28', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4680'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4674>
+{'name': 'Lufthansa Technik Logistik Services GmbH', 'address': 'Weg beim Jaeger 193', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4674'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3334>
+{'name': 'Yusen Logistics (Deutschland) GmbH', 'address': 'Gruener Deich 1', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3334'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4449>
+{'name': 'OMEGA ITL Zollspedition GmbH', 'address': 'Australiastrasse / Schuppen 52 A', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4449'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4379>
+{'name': 'Otto Group Logistics GmbH', 'address': 'Werner-Otto-Strasse 1 - 7', 'plz': '22179', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4379'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4273>
+{'name': 'SIFA Deutschland GmbH', 'address': 'Veritaskai 8', 'plz': '21079', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4273'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2188> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2116> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1944> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1903> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1900> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1896> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1806> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1355> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4211>
+{'name': 'TRB Logistics GmbH', 'address': 'Schlinckstrasse 5', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4211'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4198>
+{'name': 'Symotion GmbH', 'address': 'Altenwerder Hauptstrasse 5', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4198'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4097>
+{'name': 'MGH Logistics GmbH', 'address': 'Neuer Wall 25 / Schleusenbruecke 1', 'plz': '20354', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4097'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4119>
+{'name': 'CIAO! World Transport & Logistics UG', 'address': 'Wendenstrasse 435', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4119'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4012>
+{'name': 'Wispex DE GmbH', 'address': 'Borstelmannsweg 143', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=4012'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3862>
+{'name': 'Hermes Fulfilment GmbH', 'address': 'Bannwarthstrasse 5', 'plz': '22179', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3862'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3740>
+{'name': 'Kraeft Logistik GmbH', 'address': 'Nordersand 2', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3740'}
+[2024-06-26 10:18:59] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3860>
+{'name': 'MCTBL International GmbH', 'address': 'Schnackenburgallee 45D', 'plz': '22525', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3860'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3853>
+{'name': 'CLG Consolidation & Logistics GmbH', 'address': 'Rossweg 20', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3853'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3738>
+{'name': 'TPA Global GmbH & Co. KG', 'address': 'Dradenaustrasse 18', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3738'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3673>
+{'name': 'Point Global Internationale Spedition GmbH', 'address': 'Katharinenstrasse 9', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3673'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1347> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1345> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1343> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1339> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1335> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1333> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1329> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1327> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1325> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1323> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1321> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3643>
+{'name': 'Oia-Logistic GmbH', 'address': 'Trettaustrasse 32', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3643'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3641>
+{'name': 'Ligentia Germany GmbH', 'address': 'Flughafenstrasse 52a, Airport-Center (Haus C)', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3641'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3570>
+{'name': 'Groo GmbH', 'address': 'Randersweide 1', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3570'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3314>
+{'name': 'Savino Del Bene GmbH', 'address': 'Grimm 8', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3314'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1319> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1317> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1315> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1313> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3182>
+{'name': 'M.I.T. GmbH', 'address': 'Obenhauptstrasse 7', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3182'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3111>
+{'name': 'Witt Trucking Logistics GmbH', 'address': 'Gottlieb-Daimler-Str. 8', 'plz': '21629 ', 'city': 'Neu Wulmstorf', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3111'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3109>
+{'name': 'Capitano Logistik GmbH', 'address': 'Kirchdorferstr. 194a', 'plz': '21109', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3109'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2989>
+{'name': 'Cont-Trust GmbH', 'address': 'Eggerstedter Weg 18', 'plz': '25421', 'city': 'Pinneberg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2989'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3053>
+{'name': 'CF&S Germany GmbH', 'address': ' Heidenkampsweg 82', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=3053'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2689>
+{'name': 'FR8 Logistik GmbH', 'address': 'Roterlenweg 4', 'plz': '22045', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2689'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2550>
+{'name': 'ETS & Scan Global Logistics GmbH', 'address': 'Heidenkampsweg 81', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2550'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2488>
+{'name': 'Logwin Air + Ocean Deutschland GmbH - Hamburg Airport Cargo Center', 'address': 'Weg beim Jaeger 200, Geb. 393 B', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2488'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2474>
+{'name': 'Eichholtz GmbH', 'address': 'Mueggenburger Str. 7-15', 'plz': '20539 ', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2474'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2549>
+{'name': 'Atlantic Integrated Freight GmbH', 'address': 'Burchardstrasse 19 - 21', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2549'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2473>
+{'name': 'Sea Master Shipping GmbH', 'address': 'Suederstrasse 75A', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2473'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2398>
+{'name': 'TOPlog International Forwarding GmbH', 'address': 'Freschenhausener Weg 10a', 'plz': '21220', 'city': 'Seevetal', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2398'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2396>
+{'name': 'Customs Support Deutschland GmbH', 'address': '  Stenzelring 33', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2396'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2328>
+{'name': 'Overseas-Forwarding Internationale Schifffahrts- und Speditionsgesellschaft mbH', 'address': 'Grimm 8', 'plz': '20457 ', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2328'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2278>
+{'name': 'OIA Global GmbH', 'address': 'Grimm 12', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2278'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1309> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1305> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1303> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1301> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1299> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1297> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1293> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1291> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1285> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1283> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1281> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1275> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1273> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1271> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1265> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2188>
+{'name': 'Scan-Shipping GmbH', 'address': 'Grosse Elbstrasse 14', 'plz': '22767', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2188'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2116>
+{'name': 'M-Track Mondial GmbH', 'address': 'Stadthausbruecke 8', 'plz': '20355', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=2116'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1944>
+{'name': 'NAVIS Schiffahrts- und Speditions-Aktiengesellschaft', 'address': 'Billhorner Kanalstrasse 69', 'plz': '20539', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1944'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1903>
+{'name': 'FedEx Express Deutschland GmbH', 'address': 'Grossmannstrrasse 140', 'plz': '22453', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1903'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1896>
+{'name': 'Conceptum Logistics Germany GmbH ', 'address': 'Zirkusweg 2', 'plz': '20359', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1896'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1900>
+{'name': 'FedEx Express Deutschland GmbH', 'address': 'Heselstuecken 13', 'plz': '22453', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1900'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1806>
+{'name': 'HML Hamburg Marine Logistik GmbH', 'address': 'Obenhauptstr. 10', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1806'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1355>
+{'name': 'ABLE LOGISTICS (EUROPE) GmbH', 'address': 'Grusonstr. 51', 'plz': '22113', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1355'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1263> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1259> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1257> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1253> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1251> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1249> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1247> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1245> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1347>
+{'name': 'Apollo Internationale Spedition GmbH', 'address': 'Jenfelder Str. 74', 'plz': '22045', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1347'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1345>
+{'name': 'ANCOTRANS GmbH', 'address': 'Jaffestrasse 12', 'plz': '21109', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1345'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1343>
+{'name': 'Extreme Shipping GmbH', 'address': 'Heilwigstrasse 25', 'plz': '20249', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1343'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1339>
+{'name': 'Stöbersand GmbH - Spedition + Projektlogistik', 'address': 'Billwerder Ring 19', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1339'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1335>
+{'name': 'Aquarius Shipping Hamburg GmbH', 'address': 'Neumuehlen 24', 'plz': '22763', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1335'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1333>
+{'name': 'ADECON Logistics GmbH', 'address': 'Nagelsweg 28', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1333'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1329>
+{'name': 'Robert Kukla Hamburg GmbH', 'address': 'Katharinenstrasse 30', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1329'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1327>
+{'name': 'Global Forwarding Germany GmbH', 'address': 'Mueggenburger Strasse 26', 'plz': '20539', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1327'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1325>
+{'name': 'SHIPSOUL GmbH', 'address': 'Witternstrasse 20', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1325'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1321>
+{'name': 'OCIS Customs Service GmbH', 'address': 'Afrikastrasse 6', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1321'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1319>
+{'name': 'ZOLL POOL HAFEN HAMBURG AG', 'address': 'Stenzelring 33', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1319'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1323>
+{'name': 'Adoria Freight GmbH', 'address': 'Hamburger Str. 146', 'plz': '22083', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1323'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1317>
+{'name': 'GOMULTIMODAL GmbH', 'address': 'Eiffestrasse 74', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1317'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1313>
+{'name': 'SKM Logistics & Trade GmbH', 'address': 'Katharinenstrasse 4', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1313'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1315>
+{'name': 'COLI Logistics GmbH', 'address': 'Grosser Grasbrook 10', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1315'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1235> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1233> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1231> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1223> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1221> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1219> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1217> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1213> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1211> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1209> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1205> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1203> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1201> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1197> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1195> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1309>
+{'name': 'Hanseatiq GmbH', 'address': 'St. Pauli Landungsbruecken 10', 'plz': '20359', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1309'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1305>
+{'name': 'EPS Este Project Service GmbH', 'address': 'Neuenfelder Faehrdeich 120', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1305'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1301>
+{'name': 'SCT Seiler Schwergut- und Containertransporte GmbH', 'address': 'Worthdamm 38', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1301'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1303>
+{'name': 'EURASIA Global Concept GmbH', 'address': 'Poggenmuehle 1', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1303'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1189> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1187> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1183> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1179> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1299>
+{'name': 'JCL LogisticsGermany GmbH', 'address': 'Anckelmannsplatz 1', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1299'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1297>
+{'name': 'Boyens Internationale Spedition GmbH', 'address': 'Appelhoff 5', 'plz': '22309', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1297'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1293>
+{'name': 'E.T.S. Hamburg D. Bisping GmbH', 'address': 'Kolumbusstr. 16', 'plz': '22113', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1293'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1291>
+{'name': 'STUHR Container Logistics GmbH & Co. KG', 'address': 'Hovestrasse 63-65', 'plz': '20539', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1291'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1285>
+{'name': 'Rhenus Onsite Logistics Hamburg GmbH & Co. KG', 'address': 'Worthdamm 32', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1285'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1283>
+{'name': 'TK Asia Logistics GmbH & Co. KG', 'address': 'Schmidts Breite 15', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1283'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1281>
+{'name': 'Four A´s Transport und Service GmbH', 'address': 'Am Wiebelsmoor 2', 'plz': '21261', 'city': 'Welle', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1281'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1275>
+{'name': 'UTM Universal Transport GmbH', 'address': 'Neuer Hoeltigbaum 8', 'plz': '22143', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1275'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1273>
+{'name': 'IFG International Forwarding Germany GmbH', 'address': 'Neue Str. 49', 'plz': '21073', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1273'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1271>
+{'name': 'GW Forwarding', 'address': 'Klopstockstrasse 15', 'plz': '22765', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1271'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1265>
+{'name': 'Hellmann Worldwide Logistics Germany GmbH & Co. KG', 'address': '', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1265'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1259>
+{'name': 'Forto Logistics SE & Co. KG ', 'address': 'Willy-Brandt-Strasse 1', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1259'}
+[2024-06-26 10:19:00] INFO | scrapy.crawler => Received SIGINT, shutting down gracefully. Send again to force 
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1263>
+{'name': 'Friedrich A. Kruse jun. Internationale Spedition e.K.', 'address': 'Faehrstrasse 49', 'plz': '25541', 'city': 'Brunsbüttel', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1263'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1253>
+{'name': 'Eagle Trans Shipping & Logistics GmbH', 'address': 'Theodorstr. 41/ Haus P', 'plz': '22761', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1253'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1251>
+{'name': 'Racing Cargo Germany GmbH', 'address': 'Forsmannstr. 14 b', 'plz': '22303', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1251'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1257>
+{'name': 'NVO Consolidation GmbH', 'address': 'Poststrasse 9a', 'plz': '20354', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1257'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1249>
+{'name': 'SITRA Spedition GmbH', 'address': 'Stenzelring 24', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1249'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1247>
+{'name': 'Cargomind (Germany) GmbH', 'address': 'Gurlittstrasse 31', 'plz': '20099', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1247'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1177> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1175> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1173> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1171> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1169> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1167> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1163> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1161> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1159> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1155> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1153> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1151> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1149> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1147> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1145> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1141> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.engine => Crawled (200) <GET https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1139> (referer: https://www.vhsp.de/mitglieder/) ['cached']
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1245>
+{'name': 'Otto Haalboom Internationale Spedition e.K.', 'address': 'Hans-Duncker-Str. 9', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1245'}
+[2024-06-26 10:19:00] INFO | scrapy.core.engine => Closing spider (shutdown)
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1235>
+{'name': 'CEVA Freight Germany GmbH', 'address': 'Weg beim Jaeger 218-222', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1235'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1233>
+{'name': 'Kroll Internationale Spedition GmbH', 'address': 'Weg beim Jaeger 200, Geb. 391', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1233'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1231>
+{'name': 'Jerich Germany GmbH', 'address': 'Katharinenstr. 33', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1231'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1223>
+{'name': 'acargo GmbH', 'address': 'Ellerholzdamm 9', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1223'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1221>
+{'name': 'Reinhard Hornung Spedition GmbH', 'address': 'Wiedenthaler Sand 15', 'plz': '21147', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1221'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1219>
+{'name': 'CJ ICM Logistics GmbH', 'address': 'Hammerbrookstr. 90', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1219'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1217>
+{'name': 'CargoCrew International GmbH', 'address': 'Poppenbuettler Bogen 39/ Haus B', 'plz': '22399', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1217'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1213>
+{'name': 'CS4 Logistics GmbH', 'address': 'Lilienstr. 19', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1213'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1209>
+{'name': 'UL Frigoservice GmbH & Co. KG', 'address': 'Rondenbarg 25', 'plz': '22525', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1209'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1205>
+{'name': 'Sander Logistics GmbH', 'address': 'Am Genter Ufer 6', 'plz': '21129', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1205'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1211>
+{'name': 'CARGOLOG International GmbH', 'address': 'Heilwigstrasse 25', 'plz': '20249', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1211'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1203>
+{'name': 'VTG Rail Logistics Deutschland GmbH', 'address': 'Nagelsweg 34', 'plz': '20097', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1203'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1201>
+{'name': 'China Import Service & Logistics e.K.', 'address': 'Brookkehre 13', 'plz': '21029', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1201'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1189>
+{'name': 'KGH Customs Services GmbH', 'address': 'Haferweg 22', 'plz': '22769', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1189'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1197>
+{'name': 'HD-Logistics GmbH', 'address': 'Liliencronstr. 25', 'plz': '21629', 'city': 'Neu-Wulmstorf', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1197'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1195>
+{'name': 'PTL Project Transport & Logistics International GmbH', 'address': 'Hansahlener Dorfstrasse 10A', 'plz': '29640', 'city': 'Schneverdingen', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1195'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1187>
+{'name': 'QI Logistics GmbH', 'address': 'Nordkanalstr. 52', 'plz': '20097', 'city': 'Ort', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1187'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1179>
+{'name': 'TB Logistik GmbH', 'address': 'Brandshofer Deich 27 ', 'plz': '20539', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1179'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1183>
+{'name': 'Uhlhorn GmbH & Co. KG', 'address': 'Wilhelm-Bergner-Str- 15', 'plz': '21509', 'city': 'Glinde', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1183'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1177>
+{'name': 'Aspira Logistics GmbH', 'address': 'Saselheider Strasse 37', 'plz': '22159', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1177'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1175>
+{'name': 'Deutsche Seehafenspedition GmbH', 'address': 'Jenfelder Strasse 105a', 'plz': '22045', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1175'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1173>
+{'name': 'Pahlhammer Speditions- und Lagergesellschaft m.b.H.', 'address': 'Rubbertstrasse 23', 'plz': '21109', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1173'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1171>
+{'name': 'Cargo Alliance Service GmbH', 'address': 'Speersort 10', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1171'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1163>
+{'name': 'MAIRON Cargo System GmbH', 'address': 'Weg beim Jaeger 200, Geb. 393 A', 'plz': '22335', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1163'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1169>
+{'name': 'ESJOT Express Transport GmbH', 'address': 'Borstelmannsweg 145', 'plz': '20537', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1169'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1167>
+{'name': 'HLS Eurocustoms24 Zollservice GmbH & Co. KG', 'address': 'Am Windhukkai 5', 'plz': '20457', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1167'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1159>
+{'name': 'Logistik Centrum Hamburg Hinderer GmbH & Co. KG', 'address': 'Wilhelm-Iwan-Ring 11', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1159'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1161>
+{'name': 'Hansaspeed Spedition+Logistik GmbH & Co. KG', 'address': 'Wilhelm-Iwan-Ring 11', 'plz': '21035', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1161'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1153>
+{'name': 'B & H Worldwide GmbH', 'address': 'Papenreye 63', 'plz': '22453', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1153'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1155>
+{'name': 'Max-Line International Projects & Logistics GmbH', 'address': 'Borgfelder Landstrasse 4', 'plz': '28 357', 'city': 'Bremen', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1155'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1151>
+{'name': 'Lateinamerika Verein e.V.', 'address': 'Raboisen 32', 'plz': '20095', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1151'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1149>
+{'name': 'GTS Georgian Transport & Shipping GmbH', 'address': 'Faehrstieg 13', 'plz': '21107', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1149'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1147>
+{'name': 'Procedere Transport GmbH', 'address': 'Osterstrasse 86-90', 'plz': '20259', 'city': 'Hamburg', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1147'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1141>
+{'name': 'SVG Assekuranz-Service Nord GmbH', 'address': 'Leinestrasse 36', 'plz': '24539', 'city': 'Neumünster', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1141'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1145>
+{'name': 'Mardin Transport GmbH', 'address': 'Muenchner Str. 40', 'plz': '30855', 'city': 'Langenhagen', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1145'}
+[2024-06-26 10:19:00] DEBUG | scrapy.core.scraper => Scraped from <200 https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1139>
+{'name': 'LZ Logistik GmbH', 'address': 'Fritz-Reuter-Str. 14', 'plz': '21629', 'city': 'Neu Wulmstorf', 'url': 'https://www.vhsp.de/vhsp/firmenprofil/?mitglied=1139'}
+[2024-06-26 10:19:00] INFO | scrapy.extensions.feedexport => Stored jsonl feed (154 items) in: data/data.jsonl
+[2024-06-26 10:19:00] INFO | scrapy.statscollectors => Dumping Scrapy stats:
+{'downloader/request_bytes': 51317,
+ 'downloader/request_count': 155,
+ 'downloader/request_method_count/GET': 155,
+ 'downloader/response_bytes': 4400224,
+ 'downloader/response_count': 155,
+ 'downloader/response_status_count/200': 155,
+ 'elapsed_time_seconds': 1.721292,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2024, 6, 26, 7, 19, 0, 952413, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 155,
+ 'httpcompression/response_bytes': 20966100,
+ 'httpcompression/response_count': 155,
+ 'item_scraped_count': 154,
+ 'log_count/DEBUG': 313,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 5,
+ 'request_depth_max': 1,
+ 'response_received_count': 155,
+ 'scheduler/dequeued': 155,
+ 'scheduler/dequeued/memory': 155,
+ 'scheduler/enqueued': 338,
+ 'scheduler/enqueued/memory': 338,
+ 'start_time': datetime.datetime(2024, 6, 26, 7, 18, 59, 231121, tzinfo=datetime.timezone.utc)}
+[2024-06-26 10:19:00] INFO | scrapy.core.engine => Spider closed (shutdown)
