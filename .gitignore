@@ -1,22 +1,11 @@
-# enviroment files
-/scrapy-env
+__pycache__/
+scrapy-env/
+venv/
+.scrapy/
 
-# cache files
-*/.scrapy
-
-# log files
-*/*.log
-
-# env files
-.env
-
-# data files
-*/data/*.xlsx
-*/data/*.json
-*/data/*.jsonl
-*/data/*.html
-*/data/*.csv
-
-# __pycache__ files
-*/*/__pycache__
-*/*/*/__pycache__
+*.html
+*.jsonl
+*.log
+*.xlsx
+*.csv
+*.json
